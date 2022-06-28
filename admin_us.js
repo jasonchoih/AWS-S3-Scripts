@@ -8,27 +8,27 @@ const s3 = new AWS.S3({apiVersion: '2006-03-01'});
 // 
 const basePath = '/Users/jasonchoi/Server/';
 // 
-const location = 'a38';
+const location = 'a41';
 // 
 const conf = 
 {
-    // sd : [
-    //     basePath + 'sd28.com_116.10.189.115/umi/umi_20211013_2100/file/admin/' + location ,
-    //     'psj.1voc.com/' + location
-    //     // 'psj.mausedap.com/' + location
-    // ],
+    sd : [
+        basePath + 'mg28.com_116.10.189.115/umi/umi_20211013_2100/file/admin/' + location ,
+        'psj.1voc.com/' + location
+        // 'psj.mausedap.com/' + location
+    ],
     // 
     // sj: [
-    //     basePath + 'sj28.com_116.10.189.66/umi/umi_20211013_2100/file/admin/' + location,
-    //     // 'pjj.1voc.com/' + location
-    //     'pjj.mausedap.com/' + location
+    //     basePath + 'cc28.com_116.10.189.66/umi/umi_20211013_2100/file/admin/' + location,
+    //     'pjj.1voc.com/' + location
+    //     // 'pjj.mausedap.com/' + location
     // ],
     // 
-    wn: [
-        basePath + 'wn28.com_116.10.184.155/umi/umi_20211013_2100/file/admin/' + location,
-        // 'pww.1voc.com/' + location
-        'pww.mausedap.com/' + location
-    ]
+    // wn: [
+    //     basePath + 'wn28.com_116.10.184.155/umi/umi_20211013_2100/file/admin/' + location,
+    //     'pww.1voc.com/' + location
+    //     // 'pww.mausedap.com/' + location
+    // ]
 };
 // 
 const uploadDir = (s3Path, bucketName) =>

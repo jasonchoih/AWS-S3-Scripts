@@ -4,9 +4,11 @@ const macBasePath = [
 ];
 // Same folder structure as local 
 const baseFolderPath = {
-    SD28: 'sd28.com_116.10.189.115/umi',
-    WN28: 'wn28.com_116.10.184.155/umi',
-    CC28: 'cc28_com_116.10.189.66/umi'
+    SD28: 'sd28.com_113.17.169.45/umi',
+    MG28: 'mg28.com_116.10.189.115/umi',
+    CC28: 'cc28_com_116.10.189.66/umi',
+    NW28: 'nw28_com_116.10.189.66/umi',
+    WN28: 'wn28.com_116.10.184.155/umi'
 };
 // 
 const fileType = {
@@ -22,23 +24,18 @@ const uploadSubFolder = [
 ];
 // 
 const sites = [
-    // 'SD28',
+    'SD28',
+    // 'MG28',
     // 'CC28',
-    'WN28'
-    
+    // 'NW28',
+    // 'WN28'
 ];
 // 
 const mainFolder = '/umi_20211013_2100/';
 // 
 const buildFolder = [
-    // 'desktop_ver2_20220523_0900', // Cloud
-    // 'mobile_ver2_20220523_0900' //Cloud
-    // 
-    // 'desktop_ver2_20220523_0800', // Aliyun
-    // 'mobile_ver2_20220523_0000', // Aliyun    
-    // 
-    'desktop_ver2_20220530_0000',
-    'mobile_ver2_20220523_0900',
+    'old_desktop_ver2_20220616_0000',
+    'old_mobile_ver2_20220616_0000'
 ];
 // 
 const sitePath = {};
@@ -55,9 +52,18 @@ const myDomains = {
     SD28: 
     [
         [
+            // 'sd28.com',
+            'sd28.vip',
+            'shengda28.com'
+        ]
+    ],
+    MG28: 
+    [
+        [
             // 'chatterfu.com',
             // 'tcphb.com',
             // 'shubaokt.com',
+
             // 'mycprpro.com',
             // 'shdihua.com',
             // 'saikmusic.com',
@@ -72,8 +78,11 @@ const myDomains = {
         [
             // 'cc28.com',
             // 'caicai28.vip',
-            // 'caicai28.net',
-            // 
+            // 'caicai28.net'
+        ]
+    ],
+    NW28: [
+        [
             'nw28.vip',
             'naowan28.com',
             'naowan28.net',
@@ -81,7 +90,7 @@ const myDomains = {
             'dannyholding.com',
             'odorlessgas.com',
             'rwdata.top',
-            // 'testca.top'
+            'testca.top'
         ]
     ],
     WN28: [

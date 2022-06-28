@@ -1,6 +1,6 @@
 const version = [
-    'desktop_yc288_20220605_0000',
-    'mobile_yc288_20220605_0000'
+    'desktop_yc288_20220627_0000',
+    'mobile_yc288_20220627_0000'
 ];
 // 
 const sitePath = {
@@ -9,7 +9,7 @@ const sitePath = {
 };
 //
 const myDomains = [
-    'yc288.com',
+    // 'yc288.com',
     'yuce-28.com',
     'yuce18.com',
     'ycvip.cn',
@@ -39,7 +39,7 @@ const myDomains = [
     'dudancaishen.cn',
     'caishen6.cn',
     'jnhfs.cn',
-    'stc28.com'
+    // 'stc28.com'
 ];
 // 
 // Index file Desktop

@@ -7,17 +7,17 @@ const s3 = new AWS.S3({apiVersion: '2006-03-01'});
 // 
 const basePath = '/Users/jasonchoi/Server/';
 // 
-const location = 'a39';
+const location = 'a41';
 // 
 const conf = {
     sd : [
-        basePath + 'mg28.com_116.10.189.115/umi/umi_20211013_2100/file/admin/HK/' + location ,
-        'sdhk.1voc.com/' + location
+        basePath + 'mg28.com_116.10.189.115/umi/umi_20211013_2100/file/admin/x/' + location ,
+        'psjx.xxcrs1.top/' + location
     ],
     // 
     // sj: [
-    //     basePath + 'cc28.com_116.10.189.66/umi/umi_20211013_2100/file/admin/HK/' + location,
-    //     'sjhk.1voc.com/' + location
+    //     basePath + 'cc28.com_116.10.189.66/umi/umi_20211013_2100/file/admin/x/' + location,
+    //     'pjjx.xxcrs1.top/' + location
     // ],
     // 
     // wn: [
