@@ -2,9 +2,10 @@ const AWS = require('aws-sdk');
 const path = require('path');
 const fs = require('fs');
 // 
-AWS.config.loadFromPath('../config_keys/aws_sdk.json');
+AWS.config.loadFromPath('../config_keys/aws_sdk.json'); // hong kong
+// AWS.config.loadFromPath('../config_keys/aws_sdk_us.json');  //admin (Dreamland USA)
 const s3 = new AWS.S3({apiVersion: '2006-03-01'});
-const { fileType } = require('../config/config');
+const { fileExtension } = require('../config/config');
 // 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 //  
@@ -97,7 +98,7 @@ const uploadDir = (s3Path, bucketName) =>
             Key: bucketPath, 
             Body: fs.readFileSync(filePath),
             ContentEncoding: 'base64',
-            ContentType: fileType[_type],
+            ContentType: fileExtension[_type],
             ACL:'public-read'
         };
         s3.putObject(params, (err, data) =>

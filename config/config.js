@@ -1,30 +1,36 @@
 // 
 const umiBuildFolder = {
-    desktop: 'wn_ali_desktop_ver2_20220805_0000',  
-    mobile: 'wn_ali_mobile_ver2_20220805_0000'      
-};
+    desktop: 'wn_ali_desktop_ver2_20220913_0000',  
+    mobile: 'wn_ali_mobile_ver2_20220913_0000'
+}
 // Choose which platform to upload Desktop or Mobile or Both together
 const Platform = { 
     desktop: 'w', // 电脑版
     mobile: 'm'   // 手机版
 };
+// No need to comment out. Only change name when new bucket is created
+const ossBucket = {
+    MG28: 'jason-sd28-starwy-top-2022-01-30',
+    NW28: 'jason-sj28-assets-caoqingyutop-20211007',
+    WN28: 'john-cometchat-test-20220711' //cheng-hua.top
+}
 //
 const myDomains = {
     // Choose which domain to upload & Tip: Choose one domain to test
     // MG28:[       
-    //     'chatterfu.com',
-    //     'tcphb.com',        //线路1 
-    //     'shubaokt.com',
-    // 
+    //     // 'chatterfu.com',
+    //     // 'tcphb.com',        //线路1 
+    //     // 'shubaokt.com',
+    
     //     'mycprpro.com',
     //     'shdihua.com',       //线路2
     //     'saikmusic.com',
-    // 
-    //     'couponze.com',
-    //     'bribruce.com',      //线路3
-    //     'saimx.com',
-    // 
-    //     'yanyh.top'      // Tencent
+    
+    //     // 'couponze.com',
+    //     // 'bribruce.com',      //线路3
+    //     // 'saimx.com',
+    
+    //     // 'yanyh.top'      // Tencent
     // ],
     // 
     // NW28:[
@@ -36,16 +42,16 @@ const myDomains = {
     //     'rwdata.top',
     //     'testca.top',
     //     // 
-    //     'ryhdot.com'     // Tencent
+    //     // 'ryhdot.com'     // Tencent
     // ],
     // 
     WN28:[
-        // 'wn28.com',
-        // 'woniu28.com',
-        // 'woniu28.vip',
-        // 'wangnanbei.top',
-        // 'jinronghangye.top',
-        // 'too3.top',
+        'wn28.com',
+        'woniu28.com',
+        'woniu28.vip',
+        'wangnanbei.top',
+        'jinronghangye.top',
+        'too3.top',
         'zourundong.top',
         // 
         // 'yichang666.top'     // Tencent
@@ -92,5 +98,10 @@ for(let j in myDomains)
 module.exports={
     fileExtension,
     sitePath,
-    siteRootPath
+    siteRootPath,
+    // 
+    umiBuildFolder,
+    // 
+    ossBucket,
+    myDomains
 };

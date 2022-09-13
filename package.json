@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jasonchoih/aws_oss#readme",
   "dependencies": {
+    "ali-oss": "^6.17.1",
     "aws-sdk": "^2.1189.0",
     "cheerio": "^1.0.0-rc.12"
   }

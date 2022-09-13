@@ -10,7 +10,7 @@ const conf =
     //     'psj.1voc.com/' + location
     // ],
     // 
-    // sj: [
+    // sj: [ //世纪，财财，闹玩
     //     basePath + 'umi_nw28.com_116.10.189.66/umi/umi_20211013_2100/file/admin/' + location,
     //     'pjj.1voc.com/' + location
     // ],
