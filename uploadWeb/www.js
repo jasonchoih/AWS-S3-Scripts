@@ -2,6 +2,7 @@
 const { sitePath, siteRootPath } = require('../config/config');
 const { readFile, mkdirFolder, writeFile, cheerio } = require('../tools/modifyFiles');
 const { uploadFileRoot, uploadFileToBucket } = require('../tools/bucket');
+const { uploadToBucket } = require('../tools/OSS_bucket');
 // 
 const replaceText = '//! umi version: 3.5.18';
 const replacement = `var zm = navigator.userAgent.toLowerCase().match(/(ipod|iphone|android|coolpad|mmp|smartphone|midp|wap|xoom|symbian|j2me|blackberry|wince)/i)!=null?'m':'w';
@@ -25,6 +26,15 @@ const CreateRootNavigator = async(d) =>
 // 
 const go = async() =>
 {
+    // Upload files to Aliyun Bucket (Containing CSS, JS Files)
+    for(let w in siteRootPath)
+    {
+        for(let p in siteRootPath[w])
+        {
+            await uploadToBucket(siteRootPath[w][p], p);
+        }
+    }
+    // Create Root Index HTML for AWS Bucket
     for(let w in siteRootPath)
     {
         for(let p in siteRootPath[w])
@@ -36,7 +46,7 @@ const go = async() =>
             })
         }
     }
-    // 
+    // Upload Root Index HTML to AWS Bucket
     for(let w in siteRootPath)
     {
         for(let p in siteRootPath[w])
@@ -47,7 +57,7 @@ const go = async() =>
             }
         }
     }
-    //
+    // Upload Index HTML to each Domains
     for(let w in sitePath)
     {
         for(let p in sitePath[w])
