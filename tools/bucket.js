@@ -2,8 +2,8 @@ const AWS = require('aws-sdk');
 const path = require('path');
 const fs = require('fs');
 // 
-AWS.config.loadFromPath('../config_keys/aws_sdk.json'); // hong kong
-// AWS.config.loadFromPath('../config_keys/aws_sdk_us.json');  //admin (Dreamland USA)
+// AWS.config.loadFromPath('../config_keys/aws_sdk.json'); // hong kong
+AWS.config.loadFromPath('../config_keys/aws_sdk_us.json');  //admin (Dreamland USA)
 const s3 = new AWS.S3({apiVersion: '2006-03-01'});
 const { fileExtension } = require('../config/config');
 // 

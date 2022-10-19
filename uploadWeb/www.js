@@ -46,7 +46,7 @@ const go = async() =>
             })
         }
     }
-    // Upload Root Index HTML to AWS Bucket
+    // // Upload Root Index HTML to AWS Bucket
     for(let w in siteRootPath)
     {
         for(let p in siteRootPath[w])
@@ -57,7 +57,7 @@ const go = async() =>
             }
         }
     }
-    // Upload Index HTML to each Domains
+    // // Upload Index HTML to each Domains
     for(let w in sitePath)
     {
         for(let p in sitePath[w])

@@ -1,6 +1,7 @@
 const { MultiSelect } = require("enquirer");
 const AWS = require("aws-sdk");
-AWS.config.loadFromPath('../config/aws_sdk.json');
+// AWS.config.loadFromPath('../config/aws_sdk.json');
+AWS.config.loadFromPath('../config_keys/aws_sdk_eu.json');
 // 
 const s3 = new AWS.S3({apiVersion: '2006-03-01'});
 // 

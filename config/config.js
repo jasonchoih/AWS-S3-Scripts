@@ -1,7 +1,6 @@
-// 
 const umiBuildFolder = {
-    desktop: 'wn_ali_desktop_ver2_20220913_0000',  
-    mobile: 'wn_ali_mobile_ver2_20220913_0000'
+    desktop: 'nw_tx_desktop_ver2_20221011_0000',  
+    mobile: 'nw_tx_mobile_ver2_20221011_0000'
 }
 // Choose which platform to upload Desktop or Mobile or Both together
 const Platform = { 
@@ -11,51 +10,49 @@ const Platform = {
 // No need to comment out. Only change name when new bucket is created
 const ossBucket = {
     MG28: 'jason-sd28-starwy-top-2022-01-30',
-    NW28: 'jason-sj28-assets-caoqingyutop-20211007',
+    NW28: 'nw-a-xuwang123-top-20221009',
     WN28: 'john-cometchat-test-20220711' //cheng-hua.top
 }
 //
 const myDomains = {
     // Choose which domain to upload & Tip: Choose one domain to test
     // MG28:[       
+    //     // 'yanyh.top',      
     //     // 'chatterfu.com',
-    //     // 'tcphb.com',        //线路1 
+    //     // 'tcphb.com',       
     //     // 'shubaokt.com',
     
     //     'mycprpro.com',
-    //     'shdihua.com',       //线路2
+    //     'shdihua.com',       
     //     'saikmusic.com',
-    
-    //     // 'couponze.com',
-    //     // 'bribruce.com',      //线路3
-    //     // 'saimx.com',
-    
-    //     // 'yanyh.top'      // Tencent
+    //     'couponze.com',
+    //     'bribruce.com',     
+    //     'saimx.com',    
     // ],
     // 
-    // NW28:[
-    //     'nw28.vip',
-    //     'naowan28.com',
-    //     'naowan28.net',
-    //     'dannyholding.com',
-    //     'odorlessgas.com',
-    //     'rwdata.top',
-    //     'testca.top',
-    //     // 
-    //     // 'ryhdot.com'     // Tencent
-    // ],
+    NW28:[
+        // 'nw28.vip',          // Aliyun
+        // 'naowan28.com',
+        // 'naowan28.net',
+        // 'dannyholding.com',
+
+        // 'odorlessgas.com', // Tencent
+        // 'rwdata.top',
+        // 'testca.top',
+        // 'ryhdot.com'     
+    ],
     // 
-    WN28:[
-        'wn28.com',
-        'woniu28.com',
-        'woniu28.vip',
-        'wangnanbei.top',
-        'jinronghangye.top',
-        'too3.top',
-        'zourundong.top',
-        // 
-        // 'yichang666.top'     // Tencent
-    ]
+    // WN28:[
+    //     // 'wn28.com',
+    //     // 'woniu28.com',
+    //     // 'woniu28.vip',
+    //     // 'wangnanbei.top',
+    //     // 'jinronghangye.top',
+    //     // 'too3.top',
+    //     // 'zourundong.top',
+        
+    //     'yichang666.top'     // Tencent
+    // ]
 };
 // ===============================Change Here Only Above=================================
 // 
